@@ -2,8 +2,30 @@ body {
     margin-top: 50px;
 }
 
+.jumbotron .container {
+    opacity: 0;
+    transform: translate(0px, -50px);
+    transition: 1.3s;
+}
+
+.jumbotron .container.load {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
 .jumbotron img {
     width: 25%;
+}
+
+.portfolio .card {
+    opacity: 0;
+    transform: translate(0px, -30px);
+    transition: 1s;
+}
+
+.portfolio .card.load {
+    opacity: 1;
+    transform: translate(0, 0);
 }
 
 section {
@@ -12,5 +34,5 @@ section {
 
 footer {
     min-height: 50px;
-    padding-top:12px;
+    padding-top: 12px;
 }
